@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>私の推し、日本の日常。</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background: #faf4f7;
+      color: #4b4347;
+      line-height: 1.9;
+    }
+    header {
+      background: linear-gradient(rgba(92,75,81,0.35), rgba(92,75,81,0.35)), url('photos/chinatown.jpg') center 38%/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 68px 16px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.08em;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 0.98rem;
+      opacity: 0.95;
+    }
+    nav {
+      background: #fff3f7;
+      border-top: 1px solid #efd7df;
+      border-bottom: 1px solid #efd7df;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+    }
+    nav a {
+      display: block;
+      padding: 14px 6px;
+      color: #6a5860;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a.active {
+      color: #c05f87;
+      border-bottom: 2px solid #c05f87;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 36px auto 56px;
+      padding: 0 16px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 8px 24px rgba(88, 64, 74, 0.08);
+    }
+    .hero-image {
+      display: block;
+      width: min(340px, 100%);
+      height: auto;
+      margin: 0 auto 26px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    h2 {
+      margin: 0 0 16px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: #5c4b51;
+    }
+    p { margin: 0 0 16px; }
+    .lead {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.04rem;
+    }
+    .button-row {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .button-row a {
+      background: #fce4ec;
+      color: #6a5860;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 16px 32px;
+      color: #8a7981;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 640px) {
+      header { padding: 56px 16px; }
+      header h1 { font-size: 1.6rem; }
+      .card { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>私の推し、日本の日常。</h1>
+    <p>横浜で見つけた、小さくてやさしい毎日の景色</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="main.html" class="active">トップページ</a></li>
+      <li><a href="sub1.html">横浜の風景</a></li>
+      <li><a href="sub2.html">好きな理由</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+    <main class="card">
+      <h2>横浜で見つけた「小さな幸せ」</h2>
+      <img src="photos/yokohama.jpg" alt="横浜の風景" class="hero-image">
+      <div class="lead">
+        <p>横浜に住んでから、私は日常の中にある「小さな幸せ」に気づくようになりました。</p>
+        <p>海のそばを歩く朝、坂道に咲く季節の花、静かなカフェの空気…。特別なことではなくても、心に残る景色や瞬間たちは、私の毎日をやさしく包んでくれます。</p>
+        <p>このページでは、そんな「横浜で好きになった風景」や「感じたこと」を紹介します。</p>
+      </div>
+      <div class="button-row">
+        <a href="sub1.html">横浜の風景を見る</a>
+        <a href="sub2.html">好きな理由を見る</a>
+      </div>
+    </main>
+  </div>
+
+  <footer>© 2026 私の推し、日本の日常。</footer>
+</body>
+</html>

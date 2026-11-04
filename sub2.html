@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>好きな理由</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background: #faf4f7;
+      color: #4b4347;
+      line-height: 1.9;
+    }
+    header {
+      background: linear-gradient(rgba(92,75,81,0.32), rgba(92,75,81,0.32)), url('photos/fireworks.jpg') center 46%/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 66px 16px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    nav {
+      background: #fff3f7;
+      border-top: 1px solid #efd7df;
+      border-bottom: 1px solid #efd7df;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+    }
+    nav a {
+      display: block;
+      padding: 14px 6px;
+      color: #6a5860;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a.active {
+      color: #c05f87;
+      border-bottom: 2px solid #c05f87;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 36px auto 56px;
+      padding: 0 16px;
+    }
+    .panel {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(88, 64, 74, 0.08);
+      margin-bottom: 22px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #5c4b51;
+      text-align: center;
+    }
+    .reasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .reason {
+      background: #fff6f9;
+      border: 1px solid #f2dbe4;
+      border-radius: 16px;
+      padding: 18px;
+    }
+    .reason h3 {
+      margin: 0 0 8px;
+      color: #7a5967;
+      font-size: 1.05rem;
+    }
+    .reason p {
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 16px 32px;
+      color: #8a7981;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>好きな理由</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="main.html">トップページ</a></li>
+      <li><a href="sub1.html">横浜の風景</a></li>
+      <li><a href="sub2.html" class="active">好きな理由</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+    <main class="panel">
+      <h2>私が横浜を好きな理由</h2>
+      <p>私が横浜を好きなのは、ただ有名な街だからではありません。毎日の生活の中で、気持ちが少しやわらぐ瞬間をくれる場所だからです。にぎやかな場所も静かな場所もあり、その日の気分に合わせて過ごせるところに魅力を感じます。</p>
+
+      <div class="reasons">
+        <section class="reason">
+          <h3>海が近いこと</h3>
+          <p>海の見える景色には、気持ちを落ち着かせる力があります。少し歩くだけで開放感を感じられるところが好きです。</p>
+        </section>
+
+        <section class="reason">
+          <h3>街の雰囲気がおしゃれなこと</h3>
+          <p>建物やカフェ、夜景など、横浜には自然と「また来たい」と思わせる雰囲気があります。</p>
+        </section>
+
+        <section class="reason">
+          <h3>にぎやかさと静かさの両方があること</h3>
+          <p>楽しく過ごしたい日にも、ゆっくりしたい日にも合う場所があります。そのバランスがとても心地いいです。</p>
+        </section>
+      </div>
+    </main>
+
+    <section class="panel">
+      <h2>最後に</h2>
+      <p>横浜での毎日は、特別に大きな出来事がなくても、心に残るやさしい瞬間でできています。だからこそ、私にとって横浜は「住んでよかった」と思える大切な場所です。</p>
+    </section>
+  </div>
+
+  <footer>© 2026 好きな理由</footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>横浜の風景</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background: #faf4f7;
+      color: #4b4347;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(rgba(70,50,58,0.3), rgba(70,50,58,0.3)), url('photos/cosmo.jpg') center 42%/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 64px 16px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    nav {
+      background: #fff3f7;
+      border-top: 1px solid #efd7df;
+      border-bottom: 1px solid #efd7df;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+    }
+    nav a {
+      display: block;
+      padding: 14px 6px;
+      color: #6a5860;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a.active {
+      color: #c05f87;
+      border-bottom: 2px solid #c05f87;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 36px auto 56px;
+      padding: 0 16px;
+    }
+    .intro {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(88, 64, 74, 0.08);
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+    .spot {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(88, 64, 74, 0.08);
+    }
+    .spot img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .spot div {
+      padding: 18px;
+    }
+    h2, h3 {
+      color: #5c4b51;
+    }
+    h2 {
+      margin: 0 0 12px;
+      text-align: center;
+    }
+    h3 { margin: 0 0 8px; }
+    p { margin: 0; }
+    footer {
+      text-align: center;
+      padding: 24px 16px 32px;
+      color: #8a7981;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>横浜の風景</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="main.html">トップページ</a></li>
+      <li><a href="sub1.html" class="active">横浜の風景</a></li>
+      <li><a href="sub2.html">好きな理由</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+    <section class="intro">
+      <h2>心に残る横浜の景色</h2>
+      <p>横浜には、にぎやかさと落ち着きの両方があります。海の開放感、夜のきらめき、そして歩くだけで楽しい街並み。ここでは、私が好きな横浜の風景を三つ紹介します。</p>
+    </section>
+
+    <main class="grid">
+      <article class="spot">
+        <img src="photos/yoko.jpg" alt="夕方の横浜の街並み">
+        <div>
+          <h3>夕方の街並み</h3>
+          <p>空の色がやわらかく変わる時間の横浜は、いつ見ても特別です。家々の景色にも、どこかあたたかさがあります。</p>
+        </div>
+      </article>
+
+      <article class="spot">
+        <img src="photos/cosmo.jpg" alt="観覧車のある横浜の風景">
+        <div>
+          <h3>みなとみらいの明るさ</h3>
+          <p>横浜らしさを感じる場所の一つです。観覧車や光のある景色を見ると、気分まで少し前向きになります。</p>
+        </div>
+      </article>
+
+      <article class="spot">
+        <img src="photos/chinatown.jpg" alt="横浜中華街の門">
+        <div>
+          <h3>中華街のにぎわい</h3>
+          <p>色や音、人の流れに活気があって、歩くだけでも楽しい場所です。横浜の多様な魅力を感じられます。</p>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer>© 2026 横浜の風景</footer>
+</body>
+</html>
